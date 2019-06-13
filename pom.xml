@@ -6,7 +6,7 @@
 
     <groupId>MidiGrid</groupId>
     <artifactId>MidiGrid</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <dependencies>
 
@@ -16,6 +16,7 @@
             <artifactId>sqlite-jdbc</artifactId>
             <version>3.27.2.1</version>
         </dependency>
+
 
     </dependencies>
 
