@@ -40,7 +40,7 @@ public class Main {
 
     private static void selectUser() {
         try {
-            PreparedStatement ps = db.prepareStatement("SELECT UserID, UserName, Password FROM UsersAndPasswords");
+            PreparedStatement ps = db.prepareStatement("SELECT UserID, UserName, Password FROM Users");
 
             ResultSet results = ps.executeQuery();
             while (results.next()) {
@@ -60,7 +60,7 @@ public class Main {
 
     public static void insertWeight(){
         try {
-            PreparedStatement ps = db.prepareStatement("INSERT INTO UsersAndPasswords (UserID, UserName, Password) VALUES (?, ?, ?)");
+            PreparedStatement ps = db.prepareStatement("INSERT INTO Users (UserID, UserName, Password) VALUES (?, ?, ?)");
             ps.setInt(1, 8);
             ps.setString(2, "hAPPYjOE");
             ps.setString(3, "Beans");
